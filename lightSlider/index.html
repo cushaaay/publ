@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper" style="width: 600px; margin: 0 auto">
+    <div class="carousel">
+      <div class="carousel__move">
+        <div class="carousel__item">1</div>
+        <div class="carousel__item">2</div>
+        <div class="carousel__item">3</div>
+        <div class="carousel__item">4</div>
+        <div class="carousel__item">5</div>
+        <div class="carousel__item">6</div>
+        <div class="carousel__item">7</div>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__button carousel__prev">prev</button>
+        <button class="carousel__button carousel__next">next</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script>
+    let element = document.querySelector('.carousel');
+    let carousel = new Carousel(element, {
+      item: 4
+    });
+  </script>
+</body>
+</html>

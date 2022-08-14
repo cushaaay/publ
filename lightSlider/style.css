@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+.carousel {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+.carousel__move {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all .3s;
+}
+.carousel__item {
+  flex: 1;
+  font-size: 18px;
+  color: #000;
+  background-color: #ccc;
+}
+.carousel__controls {}
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  cursor: pointer;
+}
+.carousel__prev {
+  left: 10px;
+}
+.carousel__next {
+  right: 10px;
+}
